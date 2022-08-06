@@ -47,5 +47,14 @@ selected_elements <- result_students[c(1,3,5),c(2,4)]
 
 selected_elements
 ```
+```{r}
+#SECTION 5
+
+students_grades_df <- data.frame(result_students)
+
+View(students_grades_df)
+
+subset(students_grades_df, subset = Accounting > 80.0 & Legal_age == TRUE)
+```
 
 
