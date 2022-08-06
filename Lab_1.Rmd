@@ -1,3 +1,31 @@
 August 6, 2020 LAB #1
 
+```{r}
+#SECTION 1
+
+student_1 <- c(50.4, 62.3, 92.1, 77.6, TRUE)
+student_2 <- c(41.7, 87.9, 75.3, 72.4, FALSE)
+student_3 <- c(30.3, 67.8, 69.3, 71.2, FALSE)
+student_4 <- c(65.4, 85.1, 92.3, 96.8, TRUE)
+student_5 <- c(70.4, 88.2, 95.2, 90.7, TRUE)
+
+students_vector <- c(student_1, student_2, student_3, student_4, student_5)
+
+students_matrix <- matrix(students_vector, byrow = TRUE, nrow = 5)
+
+
+students_matrix
+```
+
+```{r}
+#SECTION 2
+name_students <- c("Lilly Brown", "Davis Moore", "Susan Taylor", "Mike Jones", "Tom Hill")
+
+name_courses_legal_age <- c("TIC", "Accounting", "Psychology", "Ethics", "Legal_age")
+
+colnames(students_matrix) <- name_courses_legal_age
+rownames(students_matrix) <- name_students
+
+students_matrix
+```
 
