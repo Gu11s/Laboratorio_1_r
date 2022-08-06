@@ -29,3 +29,15 @@ rownames(students_matrix) <- name_students
 students_matrix
 ```
 
+```{r}
+#SECTION 3
+
+total_grade_student <- rowSums(students_matrix[,c(1:4)])
+
+total_grade_student
+
+result_students <- cbind(students_matrix, total_grade_student)
+
+```
+
+
